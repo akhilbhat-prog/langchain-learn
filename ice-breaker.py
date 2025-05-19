@@ -24,7 +24,7 @@ if __name__ == "__main__":
     chain = summary_prompt_template | llm
     linkedin_data = scrape_linkedin_profile(
         linkedin_profile_url="https://www.linkedin.com/in/akhil-bhat/"
-        ,mock=True
+        , mock=True
     )
     res = chain.invoke(input={"information": linkedin_data})
 
