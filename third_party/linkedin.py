@@ -16,8 +16,7 @@ def scrape_linkedin_profile(linkedin_profile_url: str, mock: bool = False):
             timeout=10,
         )
     else:
-        # ENROLL WITH COUPON CODE: EDENMARCO
-        # For 20% Discount on all pricing
+
         api_endpoint = "https://api.scrapin.io/enrichment/profile"
         params = {
             "apikey": os.environ["SCRAPIN_API_KEY"],
@@ -43,5 +42,5 @@ if __name__ == "__main__":
     print(
         scrape_linkedin_profile(
             linkedin_profile_url="https://www.linkedin.com/in/akhil-bhat/"
-        ,mock=False),
+        ),
     )
