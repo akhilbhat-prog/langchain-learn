@@ -1,8 +1,6 @@
 from typing import List, Dict, Any
-
-from langchain_core.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field
-
+from langchain_core.output_parsers import PydanticOutputParser
 
 class Summary(BaseModel):
     summary: str = Field(description="summary")
